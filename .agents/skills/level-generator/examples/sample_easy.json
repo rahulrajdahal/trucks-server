@@ -1,0 +1,39 @@
+{
+  "level_id": 100,
+  "name": "Sunny Sidewalk",
+  "difficulty": "easy",
+  "track_speed": 1.0,
+  "track_capacity": 5,
+  "trucks": [
+    {
+      "truck_id": "momo_truck",
+      "name": "Momo Station",
+      "target_food": "momo",
+      "capacity": 3,
+      "initial_stack": ["pizza", "momo"],
+      "accepts": ["momo"],
+      "releases": null
+    },
+    {
+      "truck_id": "pizza_truck",
+      "name": "Pizza Corner",
+      "target_food": "pizza",
+      "capacity": 3,
+      "initial_stack": ["fries", "pizza"],
+      "accepts": ["pizza"],
+      "releases": null
+    },
+    {
+      "truck_id": "fries_truck",
+      "name": "Fries Wagon",
+      "target_food": "fries",
+      "capacity": 3,
+      "initial_stack": ["momo", "fries"],
+      "accepts": ["fries"],
+      "releases": null
+    }
+  ],
+  "win_condition": {
+    "type": "sort_all_trucks"
+  }
+}

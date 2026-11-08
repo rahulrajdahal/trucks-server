@@ -1,0 +1,31 @@
+{
+  "level_id": 1,
+  "name": "First Shift",
+  "difficulty": "easy",
+  "track_speed": 1.0,
+  "track_capacity": 4,
+  "trucks": [
+    {
+      "truck_id": "momo_truck",
+      "name": "Momo Truck",
+      "target_food": "momo",
+      "capacity": 3,
+      "initial_stack": ["pizza", "momo"],
+      "accepts": ["momo"],
+      "releases": null
+    },
+    {
+      "truck_id": "pizza_truck",
+      "name": "Pizza Truck",
+      "target_food": "pizza",
+      "capacity": 3,
+      "initial_stack": ["momo", "pizza"],
+      "accepts": ["pizza"],
+      "releases": null
+    }
+  ],
+  "win_condition": {
+    "type": "sort_all_trucks"
+  }
+}
+
